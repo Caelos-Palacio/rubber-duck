@@ -1,0 +1,14 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "rubber-duck",
+  "description": "Rubber-duck debugging for coding agents",
+  "owner": { "name": "Carlos Palacio", "url": "https://github.com/Caelos-Palacio" },
+  "plugins": [
+    {
+      "name": "rubber-duck",
+      "description": "Rubber-duck debugging for coding agents: narrate the execution path as claims, check each claim with a command, and edit only after a claim is refuted. A hook enforces it.",
+      "source": "./",
+      "category": "development"
+    }
+  ]
+}

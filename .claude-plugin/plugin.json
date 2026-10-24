@@ -1,0 +1,11 @@
+{
+  "name": "rubber-duck",
+  "version": "0.1.0",
+  "description": "Rubber-duck debugging for coding agents: narrate the execution path as claims, check each claim with a command, and edit only after a claim is refuted. A hook enforces it.",
+  "author": {
+    "name": "Carlos Palacio",
+    "url": "https://github.com/Caelos-Palacio"
+  },
+  "homepage": "https://github.com/Caelos-Palacio/rubber-duck",
+  "license": "MIT"
+}

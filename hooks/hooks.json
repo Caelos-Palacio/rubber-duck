@@ -1,0 +1,17 @@
+{
+  "description": "Rubber-duck gate: while a duck session is open, block source edits until a claim is refuted",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Edit|Write|MultiEdit|NotebookEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/skills/rubber-duck/scripts/duck.py\" hook",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}
