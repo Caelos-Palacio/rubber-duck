@@ -2,6 +2,8 @@
 
 **Rubber-duck debugging for coding agents.** The agent explains the code to a duck, one step at a time, as claims it then checks with commands. It may only edit source after a claim is refuted, and a hook enforces that.
 
+![Demo: claims are checked one by one, an edit is blocked until c6 is refuted, then the repro passes](docs/media/demo.gif)
+
 Zero dependencies (Python 3.9+ standard library). A Claude Code plugin: one skill, one hook, one ledger script.
 
 ## Why
@@ -101,6 +103,8 @@ If every claim is verified and the repro still fails, `duck status` says so: the
 ```sh
 python3 -m unittest discover -s tests -v
 ```
+
+The demo GIF is generated from real `duck` output: `python3 docs/media/demo.py capture` re-records `docs/media/capture.json`, then `python3 docs/media/demo.py` re-renders `docs/media/demo.gif` (needs Pillow and ffmpeg).
 
 ## License
 
